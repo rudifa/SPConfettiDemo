@@ -11,6 +11,7 @@
 		9DA6B5ED2C9B6DE600DAE13D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6B5EC2C9B6DE600DAE13D /* ContentView.swift */; };
 		9DA6B5EF2C9B6DE900DAE13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6B5EE2C9B6DE900DAE13D /* Assets.xcassets */; };
 		9DA6B5F22C9B6DE900DAE13D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6B5F12C9B6DE900DAE13D /* Preview Assets.xcassets */; };
+		9DA6B5FA2C9B6EC000DAE13D /* SPConfetti in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA6B5F92C9B6EC000DAE13D /* SPConfetti */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9DA6B5EC2C9B6DE600DAE13D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DA6B5EE2C9B6DE900DAE13D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA6B5F12C9B6DE900DAE13D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DA6B5FB2C9B708900DAE13D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA6B5FA2C9B6EC000DAE13D /* SPConfetti in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +38,7 @@
 		9DA6B5DE2C9B6DE600DAE13D = {
 			isa = PBXGroup;
 			children = (
+				9DA6B5FB2C9B708900DAE13D /* README.md */,
 				9DA6B5E92C9B6DE600DAE13D /* SPConfettiDemo */,
 				9DA6B5E82C9B6DE600DAE13D /* Products */,
 			);
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = SPConfettiDemo;
+			packageProductDependencies = (
+				9DA6B5F92C9B6EC000DAE13D /* SPConfetti */,
+			);
 			productName = SPConfettiDemo;
 			productReference = 9DA6B5E72C9B6DE600DAE13D /* SPConfettiDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 9DA6B5DE2C9B6DE600DAE13D;
+			packageReferences = (
+				9DA6B5F82C9B6EC000DAE13D /* XCRemoteSwiftPackageReference "SPConfetti" */,
+			);
 			productRefGroup = 9DA6B5E82C9B6DE600DAE13D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DA6B5F82C9B6EC000DAE13D /* XCRemoteSwiftPackageReference "SPConfetti" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPConfetti";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DA6B5F92C9B6EC000DAE13D /* SPConfetti */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DA6B5F82C9B6EC000DAE13D /* XCRemoteSwiftPackageReference "SPConfetti" */;
+			productName = SPConfetti;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DA6B5DF2C9B6DE600DAE13D /* Project object */;
 }
